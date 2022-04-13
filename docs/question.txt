@@ -1,0 +1,10 @@
+Lien vers page web du site ?
+
+Utiliser un système de gestion de versions pour le suivi du projet et son hébergement. Répsonse : Tout le code doit être versionné sur GitHub et le site devra être accessible sur
+Github Pages une fois terminé.
+
+
+Animations :
+	- Différences entre desktop et mobile/tablette.
+
+
