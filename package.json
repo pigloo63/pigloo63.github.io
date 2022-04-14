@@ -1,0 +1,22 @@
+{
+  "name": "ohmyfood",
+  "version": "1.0.0",
+  "description": "html/css/sass",
+  "main": "index.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pigloo63/pigloo63.github.io.git"
+  },
+  "author": "Simon MANDEREAU",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/pigloo63/pigloo63.github.io/issues"
+  },
+  "homepage": "https://github.com/pigloo63/pigloo63.github.io#readme"
+}
