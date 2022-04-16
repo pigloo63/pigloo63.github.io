@@ -1,0 +1,56 @@
+@font-face {
+  font-family: "Roboto";
+  src: url(./docs/Roboto-Regular.ttf) format("truetype");
+}
+@media (max-width: 375px) {
+  header {
+    text-align: center;
+    font-size: 25px;
+    padding-bottom: 20px;
+    padding-top: 15px;
+    font-weight: bold;
+    font-style: italic;
+  }
+
+  .location {
+    font-family: "Roboto";
+    background-color: #F2F2F2;
+    height: 335px;
+    width: 100%;
+    text-align: center;
+    box-sizing: border-box;
+    margin: auto;
+  }
+  .location h1 {
+    font-size: 25px;
+    padding-bottom: 15px;
+    font-weight: bold;
+    padding-top: 30px;
+  }
+  .location--text {
+    font-size: 20px;
+    padding-bottom: 60px;
+  }
+  .location--place {
+    font-size: 15px;
+    background-color: #DADADA;
+    width: 100%;
+    margin-bottom: 5px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    font-weight: bold;
+  }
+  .location--explorer--bouton {
+    cursor: pointer;
+    border: 1px solid pink;
+    color: white;
+    font-size: 20px;
+    border-radius: 25px;
+    background: rgb(2, 0, 36);
+    background: linear-gradient(353deg, rgb(2, 0, 36) 0%, rgb(232, 110, 193) 66%, rgb(222, 105, 186) 87%, rgb(255, 121, 208) 100%, rgb(0, 212, 255) 100%);
+    margin: 15px;
+    padding: 15px;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,13 @@
+@font-face {
+    font-family: 'Roboto';
+    src: url(./docs/Roboto-Regular.ttf) format('truetype');
+}
+
+@media (max-width: 375px) {
+
+    @import "./utils/mixin.scss";
+    @import "./utils/variable.scss";
+    
+    @import "./layout/header.scss";
+    @import "./layout/section";  
+}

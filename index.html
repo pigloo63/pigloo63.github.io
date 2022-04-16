@@ -4,23 +4,26 @@
         <title>ohmyfood</title>
         <link rel="stylesheet" href="css/normalize.css" />
         <link rel="stylesheet" href="css/fontawesome-free-6.0.0-web/css/all.css" />
+        <link rel="stylesheet" href="css/style.css" />
     </head>
     <body>
         <header>
             <h1>ohmyfood</h1>
         </header>
         <main>
-            <section id="location">
-                <p>Paris, Belleville</p>
+            <section class="location">
+                <p class="location--place"><i class="fa-solid fa-location-dot point"></i>Paris, Belleville</p>
                 <h1>Réservez le menu qui vous convient</h1>
-                <p>Découvrez des restaurants d'exeption, sélectionnés par nos soins.</p>
-                <a>Explorez nos restaurants</a>
+                <p class="location--text">Découvrez des restaurants d'exeption, sélectionnés par nos soins.</p>
+                <a class="location--explorer--bouton">Explorez nos restaurants</a>
             </section>
-            <section id="howto">
+            <section class="howto">
                 <h1>Fonctionnent</h1>
-                <a><i class="fa-solid fa-mobile-screen-button"></i>Choissisez un restaurant</a>
-                <a><i class="fa-solid fa-list-ul"></i>Composez votre menu</a>
-                <a><i class="fa-solid fa-store"></i>Dégustez au restaurant</a>
+                <ol>
+                    <li><a class="menu"><i class="fa-solid fa-mobile-screen-button"></i>Choissisez un restaurant</a></li>
+                    <li><a class="menu"><i class="fa-solid fa-list-ul"></i>Composez votre menu</a></li>
+                    <li><a class="menu"><i class="fa-solid fa-store"></i>Dégustez au restaurant</a></li>
+                </ol>
             </section>
             <section id="restaurants">
                 <h1>Restaurants</h1>
