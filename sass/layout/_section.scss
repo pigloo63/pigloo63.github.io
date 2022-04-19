@@ -1,5 +1,5 @@
 .location{
-    font-family: 'Roboto';
+    font-family: 'Roboto', arial, sans-serif;
     background-color: #F2F2F2;
     height: 335px;
     width: 100%;
@@ -8,35 +8,105 @@
     margin: auto;
         & h1 {
             font-size: 25px;
-            padding-bottom: 15px;
+            padding-bottom: 5px;
             font-weight: bold;
             padding-top: 30px;
+            text-align: center;
+            margin: 10px 45px 15px 45px;
         }
     &--text
         {
-            font-size: 20px;
+            font-size: 18px;
             padding-bottom: 60px;
+            color: #636363;
         }
     &--place{
         font-size: 15px;
-        background-color: #DADADA;
+        background-color: #E1E1E1;
         width: 100%;
         margin-bottom: 5px;
         padding-top: 15px;
         padding-bottom: 15px;
         font-weight: bold;
     }
+    &--icon{
+        padding-right: 15px;
+        font-size: 20px;
+    }
     &--explorer--bouton{
         cursor: pointer;
         @include border (pink);
         color: white;
-        font-size: 20px;
+        font-size: 18px;
         border-radius: 25px;
         background: rgb(2,0,36);
         background: linear-gradient(353deg, rgba(2,0,36,1) 0%, rgba(232,110,193,1) 66%, rgba(222,105,186,1) 87%, rgba(255,121,208,1) 100%, rgba(0,212,255,1) 100%);
         margin: 15px;
         padding: 15px;
     }
+}
 
+.howto{
+    margin: 20px;
+    & h1{
+        font-size: 25px;
+        font-weight: bold;
+        margin-top: 50px;
+        margin-bottom: 30px;
+    }
+    & ol{
+        width: 100%;
+        margin: auto;
+        list-style: none;
+        font-size: 16px;
+        list-style: none;
+        counter-reset: li;
+        font-weight: bold;      
+    }
+    & li{
+        @include border (#F2F2F2);
+        height: 70px;
+        margin: 5px;
+        box-sizing: border-box;
+        width: 100%;
+        border-radius: 50px;
+        background-color: #F2F2F2;
+        margin-bottom: 20px;
+        padding: 25px;
+        padding-left: 10px;
+        counter-increment: li;
+
+        &::before{
+            content: counter(li);
+            @include border ($color-primary);
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            background-color: $color-primary;
+            display: inline-block;
+            text-align: center;
+            line-height: 20px;
+            position: relative;
+            left: -19px;
+            color: white;
+        }
+    }
+    & .icon-menu{
+        padding-right: 25px;
+        color: #939393;
+        font-size: 20px;
+    }
+}
+
+.restaurants{
+    background-color: #F2F2F2;
     
+    &-title{
+        font-weight: bold;
+        font-size: 25px;
+        padding-left: 18px;
+        padding-top: 55px;
+        padding-bottom: 20px;
+    }
+
 }

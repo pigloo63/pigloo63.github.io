@@ -1,9 +1,11 @@
-header
-{
+header{
+    & h1{
     text-align: center;
     font-size: $text-size;
     padding-bottom: 20px;
     padding-top: 15px;
     font-weight: bold;
     font-style: italic;
+    font-family: 'Shrikhand', arial, sans-serif;
+    }
 }

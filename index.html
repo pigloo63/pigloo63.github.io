@@ -13,7 +13,7 @@
         </header>
         <main>
             <section class="location">
-                <p class="location--place"><i class="fa-solid fa-location-dot point"></i>Paris, Belleville</p>
+                <p class="location--place"><i class="fa-solid fa-location-dot point location--icon"></i>Paris, Belleville</p>
                 <h1>Réservez le menu qui vous convient</h1>
                 <p class="location--text">Découvrez des restaurants d'exeption, sélectionnés par nos soins.</p>
                 <a class="location--explorer--bouton">Explorez nos restaurants</a>
@@ -21,39 +21,59 @@
             <section class="howto">
                 <h1>Fonctionnent</h1>
                 <ol>
-                    <li><a class="menu"><i class="fa-solid fa-mobile-screen-button"></i>Choissisez un restaurant</a></li>
-                    <li><a class="menu"><i class="fa-solid fa-list-ul"></i>Composez votre menu</a></li>
-                    <li><a class="menu"><i class="fa-solid fa-store"></i>Dégustez au restaurant</a></li>
+                    <li><a class="menu"><i class="fa-solid fa-mobile-screen-button icon-menu"></i>Choissisez un restaurant</a></li>
+                    <li><a class="menu"><i class="fa-solid fa-list-ul icon-menu"></i>Composez votre menu</a></li>
+                    <li><a class="menu"><i class="fa-solid fa-store icon-menu"></i>Dégustez au restaurant</a></li>
                 </ol>
             </section>
-            <section id="restaurants">
-                <h1>Restaurants</h1>
-                <article>
+            <section class="restaurants">
+                <h1 class="restaurants-title">Restaurants</h1>
+                <article class="card">
                     <a href="la_palette_du_gout.html">
-                        <img src="./images/restaurant1.jpg" alt="La palette du goût" />
-                        <h1>La palette du goût</h1>
-                        <p>Ménilmontant</p>
+                        <div class="card--img"> 
+                            <img src="./images/restaurant1.jpg" alt="La palette du goût" />
+                        </div>
+                        <div class="card--info"> 
+                            <h1>La palette du goût</h1>
+                            <p>Ménilmontant</p>
+                            <div class="heart-icon"><i class="fa-regular fa-heart"></i></div>
+                        </div> 
                     </a>
                 </article>
-                <article>  
+                <article class="card">  
                     <a href="la_note_enchantee.html">
-                        <img src="./images/restaurant3.jpg" alt="La note enchantée" />
-                        <h1>La note enchantée</h1>
-                        <p>Charonne</p>
+                        <div class="card--img">
+                          <img src="./images/restaurant3.jpg" alt="La note enchantée" />
+                        </div>
+                        <div class="card--info">
+                            <h1>La note enchantée</h1>
+                            <p>Charonne</p>
+                            <i class="fa-regular fa-heart"></i>
+                        </div>
                     </a>
                 </article>
-                <article>
+                <article class="card">
                     <a href="a_la_francaise.html">
-                        <img src="./images/restaurant4.jpg" alt="A la française" />
-                        <h1>A la française</h1>
-                        <p>Cité Rouge</p>
+                        <div class="card--img">
+                            <img src="./images/restaurant4.jpg" alt="A la française" />
+                        </div>
+                        <div class="card--info">
+                            <h1>A la française</h1>
+                            <p>Cité Rouge</p>
+                            <i class="fa-regular fa-heart"></i>
+                        </div>
                     </a>
                 </article>
-                <article>
+                <article class="card"> 
                     <a href="les_delices_des_sens.html">
-                        <img src="./images/restaurant2.jpg" alt="Les délice des sens" />
-                        <h1>Le délice des sens</h1>
-                        <p>Folie-Mérancourt</p>
+                        <div class="card--img">
+                            <img src="./images/restaurant2.jpg" alt="Les délice des sens" />
+                        </div>
+                        <div class="card--info">
+                            <h1>Le délice des sens</h1>
+                            <p>Folie-Mérancourt</p>
+                            <i class="fa-regular fa-heart"></i>
+                        </div>
                     </a>
                 </article>
             </section>
@@ -61,8 +81,8 @@
         <footer>
             <h1>ohmyfood</h1>
             <ul>
-                <li><i class="fa-solid fa-utensils"></i>Proposez un restaurant</li>
-                <li><i class="fa-solid fa-handshake-angle"></i>Devenir partenaire</li>
+                <li><i class="fa-solid fa-utensils ustensils-icon"></i>Proposez un restaurant</li>
+                <li><i class="fa-solid fa-handshake-angle footer-icon"></i>Devenir partenaire</li>
                 <li>Mention légales</li>
                 <li>Contact</li>
             </ul>
