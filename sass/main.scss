@@ -8,8 +8,6 @@
     src: url(docs/Shrikhand-Regular.ttf) format('truetype');
 }
 
-@media (max-width: 375px) {
-
     @import "./utils/mixin.scss";
     @import "./utils/variable.scss";
 
@@ -18,7 +16,10 @@
     @import "./layout/header.scss";
     @import "./layout/section";
     @import "./layout/footer";
+    @import "./layout/main";
+    @import "./layout/article";
 
-    @import "./composants/card";    
+    @import "./composants/card";   
+    
+    @import "./pages/la-note-enchantee"
 
-}

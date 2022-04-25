@@ -110,3 +110,15 @@
     }
 
 }
+
+.title {
+    &--first{
+    font-size: 25px;
+    font-weight: bold;
+    font-style: italic;
+    padding-bottom: 20px;
+    }
+    &--flex{
+        display: flex;
+    }
+}

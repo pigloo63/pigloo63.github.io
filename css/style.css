@@ -6,195 +6,250 @@
   font-family: "Shrikhand";
   src: url(docs/Shrikhand-Regular.ttf) format("truetype");
 }
-@media (max-width: 375px) {
-  body {
-    font-family: "Shrikhand", arial, sans-serif;
-  }
+body {
+  font-family: "Shrikhand", arial, sans-serif;
+}
 
-  header h1 {
-    text-align: center;
-    font-size: 25px;
-    padding-bottom: 20px;
-    padding-top: 15px;
-    font-weight: bold;
-    font-style: italic;
-    font-family: "Shrikhand", arial, sans-serif;
-  }
+header {
+  text-align: center;
+}
 
-  .location {
-    font-family: "Roboto", arial, sans-serif;
-    background-color: #F2F2F2;
-    height: 335px;
-    width: 100%;
-    text-align: center;
-    box-sizing: border-box;
-    margin: auto;
-  }
-  .location h1 {
-    font-size: 25px;
-    padding-bottom: 5px;
-    font-weight: bold;
-    padding-top: 30px;
-    text-align: center;
-    margin: 10px 45px 15px 45px;
-  }
-  .location--text {
-    font-size: 18px;
-    padding-bottom: 60px;
-    color: #636363;
-  }
-  .location--place {
-    font-size: 15px;
-    background-color: #E1E1E1;
-    width: 100%;
-    margin-bottom: 5px;
-    padding-top: 15px;
-    padding-bottom: 15px;
-    font-weight: bold;
-  }
-  .location--icon {
-    padding-right: 15px;
-    font-size: 20px;
-  }
-  .location--explorer--bouton {
-    cursor: pointer;
-    border: 1px solid pink;
-    color: white;
-    font-size: 18px;
-    border-radius: 25px;
-    background: rgb(2, 0, 36);
-    background: linear-gradient(353deg, rgb(2, 0, 36) 0%, rgb(232, 110, 193) 66%, rgb(222, 105, 186) 87%, rgb(255, 121, 208) 100%, rgb(0, 212, 255) 100%);
-    margin: 15px;
-    padding: 15px;
-  }
+header img {
+  width: 50%;
+  padding: 20px;
+}
 
-  .howto {
-    margin: 20px;
-  }
-  .howto h1 {
-    font-size: 25px;
-    font-weight: bold;
-    margin-top: 50px;
-    margin-bottom: 30px;
-  }
-  .howto ol {
-    width: 100%;
-    margin: auto;
-    list-style: none;
-    font-size: 16px;
-    list-style: none;
-    counter-reset: li;
-    font-weight: bold;
-  }
-  .howto li {
-    border: 1px solid #F2F2F2;
-    height: 70px;
-    margin: 5px;
-    box-sizing: border-box;
-    width: 100%;
-    border-radius: 50px;
-    background-color: #F2F2F2;
-    margin-bottom: 20px;
-    padding: 25px;
-    padding-left: 10px;
-    counter-increment: li;
-  }
-  .howto li::before {
-    content: counter(li);
-    border: 1px solid #9356DC;
-    width: 20px;
-    height: 20px;
-    border-radius: 50%;
-    background-color: #9356DC;
-    display: inline-block;
-    text-align: center;
-    line-height: 20px;
-    position: relative;
-    left: -19px;
-    color: white;
-  }
-  .howto .icon-menu {
-    padding-right: 25px;
-    color: #939393;
-    font-size: 20px;
-  }
+.location {
+  font-family: "Roboto", arial, sans-serif;
+  background-color: #F2F2F2;
+  height: 335px;
+  width: 100%;
+  text-align: center;
+  box-sizing: border-box;
+  margin: auto;
+}
+.location h1 {
+  font-size: 25px;
+  padding-bottom: 5px;
+  font-weight: bold;
+  padding-top: 30px;
+  text-align: center;
+  margin: 10px 45px 15px 45px;
+}
+.location--text {
+  font-size: 18px;
+  padding-bottom: 60px;
+  color: #636363;
+}
+.location--place {
+  font-size: 15px;
+  background-color: #E1E1E1;
+  width: 100%;
+  margin-bottom: 5px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  font-weight: bold;
+}
+.location--icon {
+  padding-right: 15px;
+  font-size: 20px;
+}
+.location--explorer--bouton {
+  cursor: pointer;
+  border: 1px solid pink;
+  color: white;
+  font-size: 18px;
+  border-radius: 25px;
+  background: rgb(2, 0, 36);
+  background: linear-gradient(353deg, rgb(2, 0, 36) 0%, rgb(232, 110, 193) 66%, rgb(222, 105, 186) 87%, rgb(255, 121, 208) 100%, rgb(0, 212, 255) 100%);
+  margin: 15px;
+  padding: 15px;
+}
 
-  .restaurants {
-    background-color: #F2F2F2;
-  }
-  .restaurants-title {
-    font-weight: bold;
-    font-size: 25px;
-    padding-left: 18px;
-    padding-top: 55px;
-    padding-bottom: 20px;
-  }
+.howto {
+  margin: 20px;
+}
+.howto h1 {
+  font-size: 25px;
+  font-weight: bold;
+  margin-top: 50px;
+  margin-bottom: 30px;
+}
+.howto ol {
+  width: 100%;
+  margin: auto;
+  list-style: none;
+  font-size: 16px;
+  list-style: none;
+  counter-reset: li;
+  font-weight: bold;
+}
+.howto li {
+  border: 1px solid #F2F2F2;
+  height: 70px;
+  margin: 5px;
+  box-sizing: border-box;
+  width: 100%;
+  border-radius: 50px;
+  background-color: #F2F2F2;
+  margin-bottom: 20px;
+  padding: 25px;
+  padding-left: 10px;
+  counter-increment: li;
+}
+.howto li::before {
+  content: counter(li);
+  border: 1px solid #9356DC;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: #9356DC;
+  display: inline-block;
+  text-align: center;
+  line-height: 20px;
+  position: relative;
+  left: -19px;
+  color: white;
+}
+.howto .icon-menu {
+  padding-right: 25px;
+  color: #939393;
+  font-size: 20px;
+}
 
-  footer {
-    background-color: rgba(0, 0, 0, 0.842);
-    color: white;
-    padding-left: 25px;
-    padding-bottom: 20px;
-  }
-  footer h1 {
-    font-size: 20px;
-    margin-bottom: 20px;
-    padding-top: 20px;
-    font-weight: bold;
-  }
-  footer ul {
-    list-style-type: none;
-  }
-  footer li {
-    font-size: 16px;
-    padding-bottom: 12px;
-  }
-  footer .footer-icon {
-    padding-right: 14px;
-    font-size: 14px;
-  }
-  footer .ustensils-icon {
-    font-size: 18px;
-    padding-right: 15px;
-  }
+.restaurants {
+  background-color: #F2F2F2;
+}
+.restaurants-title {
+  font-weight: bold;
+  font-size: 25px;
+  padding-left: 18px;
+  padding-top: 55px;
+  padding-bottom: 20px;
+}
 
-  .card {
-    height: 250px;
-    width: 340px;
-    margin: auto;
-    margin-bottom: 25px;
-    border-radius: 20px;
-    background-color: white;
-    box-sizing: border-box;
-  }
-  .card a {
-    display: inline-block;
-    height: 100%;
-    width: 100%;
-    text-decoration: none;
-    color: black;
-  }
-  .card--img {
-    width: 100%;
-    height: 175px;
-    overflow: hidden;
-    border-radius: 20px 20px 0px 0px;
-  }
-  .card--img img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-  }
-  .card--info {
-    margin: 10px;
-  }
-  .card--info h1 {
-    font-weight: bold;
-    font-size: 18px;
-  }
-  .card--info p {
-    font-size: 18px;
-  }
+.title--first {
+  font-size: 25px;
+  font-weight: bold;
+  font-style: italic;
+  padding-bottom: 20px;
+}
+.title--flex {
+  display: flex;
+}
+
+footer {
+  background-color: rgba(0, 0, 0, 0.842);
+  color: white;
+  padding-left: 25px;
+  padding-bottom: 20px;
+}
+footer h1 {
+  font-size: 20px;
+  margin-bottom: 20px;
+  padding-top: 20px;
+  font-weight: bold;
+}
+footer ul {
+  list-style-type: none;
+}
+footer li {
+  font-size: 16px;
+  padding-bottom: 12px;
+}
+footer .footer-icon {
+  padding-right: 14px;
+  font-size: 14px;
+}
+footer .ustensils-icon {
+  font-size: 18px;
+  padding-right: 15px;
+}
+
+.container-page {
+  padding-left: 15px;
+  padding-right: 15px;
+  background-color: #E1E1E1;
+  overflow: hidden;
+  font-family: "Roboto", arial, sans-serif;
+}
+
+.hide {
+  display: none;
+}
+
+.frame {
+  border: 1px solid white;
+  width: 100%;
+  background-color: white;
+  display: inline-block;
+  box-sizing: border-box;
+  border-radius: 20px;
+  padding: 10px;
+  margin-bottom: 15px;
+  box-shadow: 2px 6px 10px rgba(0, 0, 0, 0.25);
+}
+.frame--flex {
+  display: flex;
+  justify-content: space-between;
+}
+
+article h1 {
+  font-size: 15px;
+  padding-bottom: 10px;
+}
+article h2 {
+  font-size: 15px;
+  font-weight: bold;
+  padding-bottom: 10px;
+}
+article p {
+  font-size: 15px;
+}
+
+.card {
+  height: 250px;
+  width: 340px;
+  margin: auto;
+  margin-bottom: 25px;
+  border-radius: 20px;
+  background-color: white;
+  box-sizing: border-box;
+}
+.card a {
+  display: inline-block;
+  height: 100%;
+  width: 100%;
+  text-decoration: none;
+  color: black;
+}
+.card--img {
+  width: 100%;
+  height: 175px;
+  overflow: hidden;
+  border-radius: 20px 20px 0px 0px;
+}
+.card--img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.card--info {
+  margin: 10px;
+}
+.card--info h1 {
+  font-weight: bold;
+  font-size: 18px;
+}
+.card--info p {
+  font-size: 18px;
+}
+
+main img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  background-position: 100%;
 }
 
 /*# sourceMappingURL=style.css.map */
