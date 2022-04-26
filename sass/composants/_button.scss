@@ -1,0 +1,16 @@
+.order{
+    text-align: center;
+    &--button{
+        cursor: pointer;
+        border: 1px solid pink;
+        padding: 15px;
+        border-radius: 30px;
+        padding-left: 50px;
+        padding-right: 50px;
+        color: white;
+        margin: 30px;
+        font-size: 15px;
+        background: linear-gradient(353deg, rgb(2, 0, 36) 0%, rgb(232, 110, 193) 66%, rgb(222, 105, 186) 87%, rgb(255, 121, 208) 100%, rgb(0, 212, 255) 100%);
+        font-weight: bold;
+      }
+}

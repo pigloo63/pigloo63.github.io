@@ -3,5 +3,16 @@
     padding-right: 15px;
     background-color: #E1E1E1;
     overflow: hidden;
-    font-family: 'Roboto', arial, sans-serif;
+    position: relative;
+    top: -80px;
+    border-radius: 25px 25px 0px 0px;
+    padding-top: 25px;
+    margin-bottom: -80px;
 }
+
+.order{
+    &--button{
+    @include border (pink)
+    }
+}
+

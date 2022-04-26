@@ -10,19 +10,19 @@
     </head>
     <body>
         <header>
-            <a href="index.html"><i class="fa-solid fa-arrow-left"></i></a>
+            <a href="index.html"><i class="fa-solid fa-arrow-left icon-arrow"></i></a>
             <img src="./images/logo.png" alt="ohmyfood" />
         </header>
         <main>
-            <img src="./images/restaurant1.jpg" alt="La palette du goût" />
-            <main class="container-page">
+            <img src="./images/restaurant1.jpg" alt="La palette du goût" class="img-menu"/>
+            <div class="container-page">
                 <section class="title">
                     <div class="title--flex">
                         <h1 class="title--first">A la française</h1>
                         <i class="fa-regular fa-heart"></i>
                     </div>
                     <article>
-                        <h1>ENTREES</h1>
+                        <h1 class="title--second">ENTREES</h1>
                         <input id="poulpe" name="poulpe" type="checkbox" class="hide"/>
                         <label class="course" for="poulpe">
                             <div class="frame">
@@ -61,7 +61,7 @@
                         </label>
                     </article>
                     <article>
-                        <h1>PLATS</h1>
+                        <h1 class="title--second">PLATS</h1>
                         <input id="coquilles" name="coquilles" type="checkbox" class="hide"/>
                         <label class="course" for="coquilles">
                             <div class="frame">
@@ -100,14 +100,14 @@
                         </label>
                     </article>
                     <article>
-                        <h1>DESSERTS</h1>
+                        <h1 class="title--second">DESSERTS</h1>
                         <input id="petales" name="petales" type="checkbox" class="hide"/>
                         <label class="course" for="petales">
                             <div class="frame">
                                 <h2>Pétales de violettes glacés</h2>
                                 <div class="frame--flex">
                                     <p>Et purée de noisettes</p>
-                                    <p>18 euros &#8364;</p>
+                                    <p>18 &#8364;</p>
                                 </div>     
                             </div>
                             <div class="check">
@@ -139,14 +139,16 @@
                         </label>
                     </article>
                 </section>
-            </main>
-            <input id="" name="" type="button" />
+                <div class="order">
+                    <input id="commander" name="commander" type="button" value="Commander" class="order--button"/>
+                </div>
+            </div>
         </main>
         <footer>
             <h1>ohmyfood</h1>
             <ul>
-                <li><i class="fa-solid fa-utensils"></i>Proposez un restaurant</li>
-                <li><i class="fa-solid fa-handshake-angle"></i>Devenir partenaire</li>
+                <li><i class="fa-solid fa-utensils ustensils-icon"></i>Proposez un restaurant</li>
+                <li><i class="fa-solid fa-handshake-angle footer-icon"></i>Devenir partenaire</li>
                 <li>Mention légales</li>
                 <li>Contact</li>
             </ul>

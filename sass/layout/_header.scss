@@ -1,8 +1,15 @@
 header{
     text-align: center;
+    & img{
+        width: 50%;
+        padding: 15px;
+    }
+    & .icon-arrow{
+        position: absolute;
+        top: 22px;
+        left: 20px;
+        font-size: 20px;
+    }
 }
 
-header img{
-    width: 50%;
-    padding: 20px;
-}
+

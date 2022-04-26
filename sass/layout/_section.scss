@@ -100,7 +100,7 @@
 
 .restaurants{
     background-color: #F2F2F2;
-    
+    padding-bottom: 20px;
     &-title{
         font-weight: bold;
         font-size: 25px;
@@ -108,7 +108,6 @@
         padding-top: 55px;
         padding-bottom: 20px;
     }
-
 }
 
 .title {
@@ -118,7 +117,18 @@
     font-style: italic;
     padding-bottom: 20px;
     }
+    &--second{
+        font-size: 15px;
+        padding-bottom: 10px;
+        border-bottom: 2px solid $color-terciary;
+        width: 40px;
+        padding-bottom: 5px;
+        padding-top: 20px;
+        margin-bottom: 15px;
+    }
+
     &--flex{
         display: flex;
+        justify-content: space-between;
     }
 }

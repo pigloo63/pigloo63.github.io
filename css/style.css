@@ -13,10 +13,15 @@ body {
 header {
   text-align: center;
 }
-
 header img {
   width: 50%;
-  padding: 20px;
+  padding: 15px;
+}
+header .icon-arrow {
+  position: absolute;
+  top: 22px;
+  left: 20px;
+  font-size: 20px;
 }
 
 .location {
@@ -119,6 +124,7 @@ header img {
 
 .restaurants {
   background-color: #F2F2F2;
+  padding-bottom: 20px;
 }
 .restaurants-title {
   font-weight: bold;
@@ -134,8 +140,18 @@ header img {
   font-style: italic;
   padding-bottom: 20px;
 }
+.title--second {
+  font-size: 15px;
+  padding-bottom: 10px;
+  border-bottom: 2px solid #99E2D0;
+  width: 40px;
+  padding-bottom: 5px;
+  padding-top: 20px;
+  margin-bottom: 15px;
+}
 .title--flex {
   display: flex;
+  justify-content: space-between;
 }
 
 footer {
@@ -171,7 +187,15 @@ footer .ustensils-icon {
   padding-right: 15px;
   background-color: #E1E1E1;
   overflow: hidden;
-  font-family: "Roboto", arial, sans-serif;
+  position: relative;
+  top: -80px;
+  border-radius: 25px 25px 0px 0px;
+  padding-top: 25px;
+  margin-bottom: -80px;
+}
+
+.order--button {
+  border: 1px solid pink;
 }
 
 .hide {
@@ -194,10 +218,6 @@ footer .ustensils-icon {
   justify-content: space-between;
 }
 
-article h1 {
-  font-size: 15px;
-  padding-bottom: 10px;
-}
 article h2 {
   font-size: 15px;
   font-weight: bold;
@@ -231,8 +251,8 @@ article p {
 }
 .card--img img {
   width: 100%;
-  height: 100%;
   object-fit: cover;
+  transform: translateY(-25%);
 }
 .card--info {
   margin: 10px;
@@ -245,11 +265,27 @@ article p {
   font-size: 18px;
 }
 
-main img {
+.order {
+  text-align: center;
+}
+.order--button {
+  cursor: pointer;
+  border: 1px solid pink;
+  padding: 15px;
+  border-radius: 30px;
+  padding-left: 50px;
+  padding-right: 50px;
+  color: white;
+  margin: 30px;
+  font-size: 15px;
+  background: linear-gradient(353deg, rgb(2, 0, 36) 0%, rgb(232, 110, 193) 66%, rgb(222, 105, 186) 87%, rgb(255, 121, 208) 100%, rgb(0, 212, 255) 100%);
+  font-weight: bold;
+}
+
+main .img-menu {
   width: 100%;
   height: 300px;
   object-fit: cover;
-  background-position: 100%;
 }
 
 /*# sourceMappingURL=style.css.map */
