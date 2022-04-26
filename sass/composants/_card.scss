@@ -28,9 +28,17 @@
         & h1{
             font-weight: bold;
             font-size: 18px;
+            padding-top: 5px;
+            padding-bottom: 5px;
         }
         & p{
             font-size: 18px;
+        }
+        &--heart-icon{
+            position: relative;
+            left: 300px;
+            top: -30px;
+            font-size: 20px;
         }
     }
 }

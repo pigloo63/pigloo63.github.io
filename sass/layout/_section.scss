@@ -126,9 +126,12 @@
         padding-top: 20px;
         margin-bottom: 15px;
     }
-
     &--flex{
         display: flex;
         justify-content: space-between;
+    }
+    &--heart-icon-menu{
+        font-size: 25px;
+        padding-right: 20px;
     }
 }

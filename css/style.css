@@ -1,13 +1,21 @@
 @font-face {
   font-family: "Roboto";
-  src: url(docs/Roboto-Regular.ttf) format("truetype");
+  src: url(Roboto-Regular.ttf) format("ttf");
 }
 @font-face {
   font-family: "Shrikhand";
-  src: url(docs/Shrikhand-Regular.ttf) format("truetype");
+  src: url(Shrikhand-Regular.ttf) format("ttf");
 }
-body {
+footer h1 {
   font-family: "Shrikhand", arial, sans-serif;
+}
+
+footer ul {
+  font-family: "Roboto", Arial, sans-serif;
+}
+
+body main {
+  font-family: "Roboto", Arial, sans-serif;
 }
 
 header {
@@ -153,6 +161,10 @@ header .icon-arrow {
   display: flex;
   justify-content: space-between;
 }
+.title--heart-icon-menu {
+  font-size: 25px;
+  padding-right: 20px;
+}
 
 footer {
   background-color: rgba(0, 0, 0, 0.842);
@@ -189,7 +201,7 @@ footer .ustensils-icon {
   overflow: hidden;
   position: relative;
   top: -80px;
-  border-radius: 25px 25px 0px 0px;
+  border-radius: 30px 30px 0px 0px;
   padding-top: 25px;
   margin-bottom: -80px;
 }
@@ -260,9 +272,17 @@ article p {
 .card--info h1 {
   font-weight: bold;
   font-size: 18px;
+  padding-top: 5px;
+  padding-bottom: 5px;
 }
 .card--info p {
   font-size: 18px;
+}
+.card--info--heart-icon {
+  position: relative;
+  left: 300px;
+  top: -30px;
+  font-size: 20px;
 }
 
 .order {

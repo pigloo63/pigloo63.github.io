@@ -1,17 +1,18 @@
 @font-face {
     font-family: 'Roboto';
-    src: url(docs/Roboto-Regular.ttf) format('truetype');
+    src: url(Roboto-Regular.ttf) format('ttf');
 }
 
 @font-face {
     font-family: 'Shrikhand';
-    src: url(docs/Shrikhand-Regular.ttf) format('truetype');
+    src: url(Shrikhand-Regular.ttf) format('ttf');
 }
 
     @import "./utils/mixin.scss";
     @import "./utils/variable.scss";
 
     @import "./base/body.scss";
+    @import "./base/typography";
     
     @import "./layout/header.scss";
     @import "./layout/section";
