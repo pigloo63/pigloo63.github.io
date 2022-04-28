@@ -30,6 +30,7 @@ header .icon-arrow {
   top: 22px;
   left: 20px;
   font-size: 20px;
+  color: black;
 }
 
 .location {
@@ -40,6 +41,7 @@ header .icon-arrow {
   text-align: center;
   box-sizing: border-box;
   margin: auto;
+  border-top: 3px solid #C6C6C6;
 }
 .location h1 {
   font-size: 25px;
@@ -132,7 +134,7 @@ header .icon-arrow {
 
 .restaurants {
   background-color: #F2F2F2;
-  padding-bottom: 20px;
+  padding: 20px;
 }
 .restaurants-title {
   font-weight: bold;
@@ -184,6 +186,8 @@ footer ul {
 footer li {
   font-size: 16px;
   padding-bottom: 12px;
+  cursor: pointer;
+  color: white;
 }
 footer .footer-icon {
   padding-right: 14px;
@@ -241,12 +245,13 @@ article p {
 
 .card {
   height: 250px;
-  width: 340px;
+  width: 100%;
   margin: auto;
   margin-bottom: 25px;
   border-radius: 20px;
   background-color: white;
   box-sizing: border-box;
+  box-shadow: 2px 6px 10px rgba(0, 0, 0, 0.25);
 }
 .card a {
   display: inline-block;

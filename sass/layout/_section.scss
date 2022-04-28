@@ -6,6 +6,7 @@
     text-align: center;
     box-sizing: border-box;
     margin: auto;
+    border-top: 3px solid #C6C6C6;
         & h1 {
             font-size: 25px;
             padding-bottom: 5px;
@@ -100,7 +101,7 @@
 
 .restaurants{
     background-color: #F2F2F2;
-    padding-bottom: 20px;
+    padding: 20px;
     &-title{
         font-weight: bold;
         font-size: 25px;
