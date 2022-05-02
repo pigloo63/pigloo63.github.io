@@ -28,3 +28,20 @@ article{
         font-size: 15px;
     }
 }
+
+$animation-delay: 300ms;
+
+.animation{
+    &-menu{
+        animation: animation-menu 1000ms forwards ease-out;
+        opacity: 0;
+        @for $i from 1 through 4 {
+            &--#{$i} {
+            animation-delay: $animation-delay * $i;
+            }
+        }
+    }
+    
+
+    
+}

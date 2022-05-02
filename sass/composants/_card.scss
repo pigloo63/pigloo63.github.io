@@ -26,6 +26,7 @@
     }
     &--info{
     margin: 10px;
+    position: relative;
         & h1{
             font-weight: bold;
             font-size: 18px;
@@ -36,9 +37,10 @@
             font-size: 18px;
         }
         &--heart-icon{
-            position: relative;
-            left: 300px;
-            top: -30px;
+            position:absolute;
+            top: 50%;
+            right: 20px;
+            transform: translateY(-50%);
             font-size: 20px;
         }
     }
