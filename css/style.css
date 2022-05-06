@@ -269,6 +269,7 @@ article p {
   background-color: white;
   box-sizing: border-box;
   box-shadow: 2px 6px 10px rgba(0, 0, 0, 0.25);
+  position: relative;
 }
 .card a {
   display: inline-block;
@@ -287,6 +288,17 @@ article p {
   width: 100%;
   object-fit: cover;
   transform: translateY(-25%);
+}
+.card--img--new {
+  background-color: #99E2D0;
+  position: absolute;
+  top: 15px;
+  right: 30px;
+  padding: 10px;
+}
+.card--img--new__text {
+  color: #098c6c;
+  font-weight: bold;
 }
 .card--info {
   margin: 10px;
@@ -340,6 +352,44 @@ main .img-menu {
   to {
     opacity: 1;
     transform: translatey(0%);
+  }
+}
+body {
+  position: relative;
+}
+
+.loader {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.loader--loading-spinner--quart {
+  display: inline-block;
+  border-radius: 50px;
+  border: 8px solid green;
+  width: 90px;
+  height: 90px;
+  opacity: 1;
+}
+.loader--loading-spinner--quart::after {
+  content: "";
+  height: 90px;
+  width: 90px;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  border: 8px solid transparent;
+  border-top-color: black;
+  border-radius: 50px;
+  animation: loading-spinner 1000ms linear 2;
+}
+
+@keyframes loading-spinner {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
   }
 }
 

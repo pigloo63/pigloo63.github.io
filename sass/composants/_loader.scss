@@ -1,0 +1,41 @@
+body{
+    position: relative;
+}
+
+.loader{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    &--loading-spinner{
+        &--quart{
+        display: inline-block;
+        border-radius: 50px;
+        border: 8px solid green;
+        width: 90px;
+        height: 90px;
+        opacity: 1;
+        
+        &::after{
+            content: "";
+            height: 90px;
+            width: 90px;
+            position: absolute;
+            top: 0px;
+            left: 0px;
+            border: 8px solid transparent;
+            border-top-color: black;
+            border-radius: 50px;
+            animation: loading-spinner 1000ms linear 2;
+        }
+        }
+    }
+}
+
+@keyframes loading-spinner {
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}

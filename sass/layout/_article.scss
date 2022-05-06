@@ -29,8 +29,6 @@ article{
     }
 }
 
-$animation-delay: 300ms;
-
 .animation{
     &-menu{
         animation: animation-menu 1000ms forwards ease-out;
@@ -40,8 +38,5 @@ $animation-delay: 300ms;
             animation-delay: $animation-delay * $i;
             }
         }
-    }
-    
-
-    
+    } 
 }

@@ -7,3 +7,15 @@
     object-fit: cover; 
 }
 
+@mixin new {
+    background-color: $color-terciary;
+    position: absolute;
+    top: 15px;
+    right: 30px;
+    padding: 10px;
+}
+
+@mixin new-text {
+    color: $color-new-text;
+    font-weight: bold;
+}
