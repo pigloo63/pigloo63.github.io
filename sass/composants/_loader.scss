@@ -6,15 +6,15 @@ body{
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
+    animation: spinner 3s;
+    opacity: 0;
     &--loading-spinner{
         &--quart{
         display: inline-block;
         border-radius: 50px;
-        border: 8px solid green;
+        border: 10px solid green;
         width: 90px;
-        height: 90px;
-        opacity: 1;
-        
+        height: 90px;        
         &::after{
             content: "";
             height: 90px;
@@ -22,20 +22,12 @@ body{
             position: absolute;
             top: 0px;
             left: 0px;
-            border: 8px solid transparent;
+            border: 10px solid transparent;
             border-top-color: black;
             border-radius: 50px;
-            animation: loading-spinner 1000ms linear 2;
+            animation: loading-spinner 1000ms linear 3;
         }
         }
     }
 }
 
-@keyframes loading-spinner {
-    0%{
-        transform: rotate(0deg);
-    }
-    100%{
-        transform: rotate(360deg);
-    }
-}

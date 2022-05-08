@@ -6,6 +6,12 @@
   font-family: "Shrikhand";
   src: url(Shrikhand-Regular.ttf) format("ttf");
 }
+body {
+  position: relative;
+  opacity: 1;
+  animation: background-body 1s;
+}
+
 footer h1 {
   font-family: "Shrikhand", arial, sans-serif;
 }
@@ -125,6 +131,13 @@ header .icon-arrow {
   position: relative;
   left: -19px;
   color: white;
+}
+.howto .menu {
+  display: flex;
+  justify-content: flex-start;
+  position: relative;
+  top: -21px;
+  left: 20px;
 }
 .howto .icon-menu {
   padding-right: 25px;
@@ -280,14 +293,14 @@ article p {
 }
 .card--img {
   width: 100%;
-  height: 175px;
   overflow: hidden;
   border-radius: 20px 20px 0px 0px;
 }
 .card--img img {
   width: 100%;
   object-fit: cover;
-  transform: translateY(-25%);
+  height: 175px;
+  object-position: 50% 50%;
 }
 .card--img--new {
   background-color: #99E2D0;
@@ -315,7 +328,7 @@ article p {
 }
 .card--info--heart-icon {
   position: absolute;
-  top: 50%;
+  top: 85%;
   right: 20px;
   transform: translateY(-50%);
   font-size: 20px;
@@ -354,6 +367,36 @@ main .img-menu {
     transform: translatey(0%);
   }
 }
+@keyframes loading-spinner {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@keyframes background-body {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0;
+  }
+  99% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes spinner {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
 body {
   position: relative;
 }
@@ -362,14 +405,15 @@ body {
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
+  animation: spinner 3s;
+  opacity: 0;
 }
 .loader--loading-spinner--quart {
   display: inline-block;
   border-radius: 50px;
-  border: 8px solid green;
+  border: 10px solid green;
   width: 90px;
   height: 90px;
-  opacity: 1;
 }
 .loader--loading-spinner--quart::after {
   content: "";
@@ -378,19 +422,10 @@ body {
   position: absolute;
   top: 0px;
   left: 0px;
-  border: 8px solid transparent;
+  border: 10px solid transparent;
   border-top-color: black;
   border-radius: 50px;
-  animation: loading-spinner 1000ms linear 2;
-}
-
-@keyframes loading-spinner {
-  0% {
-    transform: rotate(0deg);
-  }
-  100% {
-    transform: rotate(360deg);
-  }
+  animation: loading-spinner 1000ms linear 3;
 }
 
 /*# sourceMappingURL=style.css.map */
