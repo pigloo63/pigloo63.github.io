@@ -31,7 +31,7 @@ article{
 
 .animation{
     &-menu{
-        animation: animation-menu 1000ms forwards ease-out;
+        animation: animation-menu 1000ms forwards ease-in-out;
         opacity: 0;
         @for $i from 1 through 4 {
             &--#{$i} {

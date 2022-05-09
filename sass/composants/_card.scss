@@ -43,11 +43,26 @@
             font-size: 18px;
         }
         &--heart-icon{
-            position:absolute;
-            top: 85%;
-            right: 20px;
-            transform: translateY(-50%);
-            font-size: 20px;
-        }
-    }
+            position: relative;
+            cursor: pointer;
+            &--main{
+            @include heart-position;
+            }
+            &--background{
+                @include heart-position;
+            & .fa-regular.fa-heart{
+                font-weight: bold;
+                background-image: linear-gradient(purple,pink);
+                -webkit-background-clip: text;
+                color: transparent;
+                transform-origin: center;
+                transform: scale(0);
+                }
+            &:hover .fa-regular.fa-heart{
+                animation: filling-heart 250ms ease-in-out forwards;
+            }
+            }
+            }
+            }
 }
+    

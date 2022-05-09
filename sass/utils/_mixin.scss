@@ -13,11 +13,19 @@
     background-color: $color-terciary;
     position: absolute;
     top: 15px;
-    right: 30px;
+    right: 20px;
     padding: 10px;
 }
 
 @mixin new-text {
     color: $color-new-text;
     font-weight: bold;
+}
+
+@mixin heart-position {
+    position: absolute;
+    top: -40px;
+    right: 20px;
+    transform: translateY(-50%);
+    font-size: 25px;
 }

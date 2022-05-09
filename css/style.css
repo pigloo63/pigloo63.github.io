@@ -6,12 +6,11 @@
   font-family: "Shrikhand";
   src: url(Shrikhand-Regular.ttf) format("ttf");
 }
-body {
-  position: relative;
-  opacity: 1;
-  animation: background-body 1s;
-}
-
+/*body{
+    position: relative;
+    opacity: 1;
+    animation: background-body 1s;
+}*/
 footer h1 {
   font-family: "Shrikhand", arial, sans-serif;
 }
@@ -257,7 +256,7 @@ article p {
 }
 
 .animation-menu {
-  animation: animation-menu 1000ms forwards ease-out;
+  animation: animation-menu 1000ms forwards ease-in-out;
   opacity: 0;
 }
 .animation-menu--1 {
@@ -306,7 +305,7 @@ article p {
   background-color: #99E2D0;
   position: absolute;
   top: 15px;
-  right: 30px;
+  right: 20px;
   padding: 10px;
 }
 .card--img--new__text {
@@ -327,11 +326,33 @@ article p {
   font-size: 18px;
 }
 .card--info--heart-icon {
+  position: relative;
+  cursor: pointer;
+}
+.card--info--heart-icon--main {
   position: absolute;
-  top: 85%;
+  top: -40px;
   right: 20px;
   transform: translateY(-50%);
-  font-size: 20px;
+  font-size: 25px;
+}
+.card--info--heart-icon--background {
+  position: absolute;
+  top: -40px;
+  right: 20px;
+  transform: translateY(-50%);
+  font-size: 25px;
+}
+.card--info--heart-icon--background .fa-regular.fa-heart {
+  font-weight: bold;
+  background-image: linear-gradient(purple, pink);
+  -webkit-background-clip: text;
+  color: transparent;
+  transform-origin: center;
+  transform: scale(0);
+}
+.card--info--heart-icon--background:hover .fa-regular.fa-heart {
+  animation: filling-heart 250ms ease-in-out forwards;
 }
 
 .order {
@@ -395,6 +416,16 @@ main .img-menu {
   }
   100% {
     opacity: 0;
+  }
+}
+@keyframes filling-heart {
+  0% {
+    transform: scale(0);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 100%;
   }
 }
 body {
