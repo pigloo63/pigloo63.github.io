@@ -152,7 +152,7 @@ header .icon-arrow {
   font-weight: bold;
   font-size: 25px;
   padding-left: 18px;
-  padding-top: 55px;
+  padding-top: 30px;
   padding-bottom: 20px;
 }
 
@@ -164,7 +164,6 @@ header .icon-arrow {
 }
 .title--second {
   font-size: 15px;
-  padding-bottom: 10px;
   border-bottom: 2px solid #99E2D0;
   width: 40px;
   padding-bottom: 5px;
@@ -331,16 +330,14 @@ article p {
 }
 .card--info--heart-icon--main {
   position: absolute;
-  top: -40px;
+  top: -50px;
   right: 20px;
-  transform: translateY(-50%);
   font-size: 25px;
 }
 .card--info--heart-icon--background {
   position: absolute;
-  top: -40px;
+  top: -50px;
   right: 20px;
-  transform: translateY(-50%);
   font-size: 25px;
 }
 .card--info--heart-icon--background .fa-regular.fa-heart {
@@ -351,8 +348,8 @@ article p {
   transform-origin: center;
   transform: scale(0);
 }
-.card--info--heart-icon--background:hover .fa-regular.fa-heart {
-  animation: filling-heart 250ms ease-in-out forwards;
+.card--info--heart-icon--background:active .fa-regular.fa-heart {
+  animation: filling-heart 500ms ease-in-out forwards;
 }
 
 .order {
@@ -396,18 +393,18 @@ main .img-menu {
     transform: rotate(360deg);
   }
 }
-@keyframes background-body {
+@keyframes loader-background {
   0% {
-    opacity: 0;
+    display: block;
+    opacity: 1;
+    z-index: 1000;
   }
-  50% {
-    opacity: 0;
-  }
-  99% {
-    opacity: 0;
+  70% {
+    opacity: 1;
   }
   100% {
-    opacity: 1;
+    display: block;
+    opacity: 0;
   }
 }
 @keyframes spinner {
@@ -432,17 +429,39 @@ body {
   position: relative;
 }
 
+.screen {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  background-color: #dddddd;
+  z-index: -1;
+  opacity: 0;
+  animation: loader-background 3s forwards;
+}
+
+.wrapper-spinner {
+  position: absolute;
+  text-align: center;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+}
+
 .loader {
   position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
   animation: spinner 3s;
   opacity: 0;
+  left: 50%;
+  top: 50vh;
+  transform: translate(-50%, -50%);
 }
 .loader--loading-spinner--quart {
   display: inline-block;
   border-radius: 50px;
-  border: 10px solid green;
+  border: 10px solid white;
   width: 90px;
   height: 90px;
 }

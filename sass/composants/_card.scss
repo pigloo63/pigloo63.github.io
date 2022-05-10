@@ -58,8 +58,8 @@
                 transform-origin: center;
                 transform: scale(0);
                 }
-            &:hover .fa-regular.fa-heart{
-                animation: filling-heart 250ms ease-in-out forwards;
+            &:active .fa-regular.fa-heart{
+                animation: filling-heart 500ms ease-in-out forwards;
             }
             }
             }
