@@ -27,8 +27,7 @@
             &__text{
                 @include new-text;
             }
-        }
-        
+        }  
     }
     &--info{
     margin: 10px;
@@ -65,4 +64,39 @@
             }
             }
 }
-    
+
+@media (min-width:768px) {
+    .card{
+        height: 375px;
+        &--img{
+            & img{
+                height: 250px;
+                object-position: 50% 57%;
+            }
+        }
+        &--info{
+            & h1{
+                font-size: 25px;
+                padding-top: 20px;
+                padding-bottom: 10px;
+            }
+            & p{
+                font-size: 20px;
+            }
+        }
+    }
+}
+
+@media (min-width:992px) {
+    .card{
+        height: 400px;
+        max-width: 46%;
+        margin: auto;
+        margin-bottom: 20px;
+        &--img{
+            & img{
+                height: 280px;
+            }
+        }
+    }
+}

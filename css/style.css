@@ -6,11 +6,6 @@
   font-family: "Shrikhand";
   src: url(Shrikhand-Regular.ttf) format("ttf");
 }
-/*body{
-    position: relative;
-    opacity: 1;
-    animation: background-body 1s;
-}*/
 footer h1 {
   font-family: "Shrikhand", arial, sans-serif;
 }
@@ -38,6 +33,11 @@ header .icon-arrow {
   color: black;
 }
 
+@media (min-width: 992px) {
+  header img {
+    width: 35%;
+  }
+}
 .location {
   font-family: "Roboto", arial, sans-serif;
   background-color: #F2F2F2;
@@ -100,7 +100,6 @@ header .icon-arrow {
   margin: auto;
   list-style: none;
   font-size: 16px;
-  list-style: none;
   counter-reset: li;
   font-weight: bold;
 }
@@ -179,6 +178,38 @@ header .icon-arrow {
   padding-right: 20px;
 }
 
+@media (min-width: 768px) {
+  .howto ol {
+    display: flex;
+  }
+  .howto ol li {
+    margin: 5px;
+  }
+  .howto ol .menu {
+    white-space: nowrap;
+    left: 13 px;
+  }
+  .howto .icon-menu {
+    padding-right: 10px;
+  }
+}
+@media (min-width: 768px) {
+  .location--place {
+    font-size: 25px;
+  }
+  .location h1 {
+    font-size: 30px;
+  }
+  .location--text {
+    font-size: 25px;
+  }
+}
+@media (min-width: 992px) {
+  .restaurant--position {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
 footer {
   background-color: rgba(0, 0, 0, 0.842);
   color: white;
@@ -334,11 +365,23 @@ article p {
   right: 20px;
   font-size: 25px;
 }
+@media (min-width: 768px) {
+  .card--info--heart-icon--main {
+    font-size: 30px;
+    top: -75px;
+  }
+}
 .card--info--heart-icon--background {
   position: absolute;
   top: -50px;
   right: 20px;
   font-size: 25px;
+}
+@media (min-width: 768px) {
+  .card--info--heart-icon--background {
+    font-size: 30px;
+    top: -75px;
+  }
 }
 .card--info--heart-icon--background .fa-regular.fa-heart {
   font-weight: bold;
@@ -352,6 +395,34 @@ article p {
   animation: filling-heart 500ms ease-in-out forwards;
 }
 
+@media (min-width: 768px) {
+  .card {
+    height: 375px;
+  }
+  .card--img img {
+    height: 250px;
+    object-position: 50% 57%;
+  }
+  .card--info h1 {
+    font-size: 25px;
+    padding-top: 20px;
+    padding-bottom: 10px;
+  }
+  .card--info p {
+    font-size: 20px;
+  }
+}
+@media (min-width: 992px) {
+  .card {
+    height: 400px;
+    max-width: 46%;
+    margin: auto;
+    margin-bottom: 20px;
+  }
+  .card--img img {
+    height: 280px;
+  }
+}
 .order {
   text-align: center;
 }

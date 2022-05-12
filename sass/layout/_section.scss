@@ -60,7 +60,6 @@
         margin: auto;
         list-style: none;
         font-size: 16px;
-        list-style: none;
         counter-reset: li;
         font-weight: bold;      
     }
@@ -76,8 +75,6 @@
         padding: 25px;
         padding-left: 10px;
         counter-increment: li;
-
-
         &::before{
             content: counter(li);
             @include border ($color-primary);
@@ -144,3 +141,48 @@
     }
 }
 
+@media (min-width:768px) {
+
+}
+
+@media (min-width:768px) {
+    
+    .howto{
+        & ol{
+            display: flex;
+            & li{
+                margin: 5px;
+            }
+            & .menu{
+                white-space: nowrap;
+                left: 13 px;
+            }
+        }
+        & .icon-menu{
+            padding-right: 10px;
+        }
+    }
+}
+
+@media (min-width:768px) {
+    .location{
+        &--place{
+            font-size: 25px;
+        }
+        & h1{
+            font-size: 30px;
+        }
+        &--text{
+            font-size: 25px;
+        }
+    }
+}
+
+@media (min-width:992px) {
+    .restaurant{
+        &--position{
+            display: flex;
+            flex-wrap: wrap;
+        }
+    }
+}
