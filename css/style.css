@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
 @font-face {
   font-family: "Roboto";
   src: url(Roboto-Regular.ttf) format("ttf");
@@ -7,14 +9,14 @@
   src: url(Shrikhand-Regular.ttf) format("ttf");
 }
 footer h1 {
-  font-family: "Shrikhand", arial, sans-serif;
+  font-family: "Shrikhand", cursive;
 }
 
 footer ul {
   font-family: "Roboto", Arial, sans-serif;
 }
 
-body main {
+body {
   font-family: "Roboto", Arial, sans-serif;
 }
 
@@ -173,9 +175,34 @@ header .icon-arrow {
   display: flex;
   justify-content: space-between;
 }
-.title--heart-icon-menu {
+.title--heart-icon {
+  position: relative;
+  cursor: pointer;
+}
+.title--heart-icon--main {
   font-size: 25px;
-  padding-right: 20px;
+}
+.title--heart-icon--background {
+  position: absolute;
+  top: 0px;
+  font-size: 25px;
+}
+@media (min-width: 768px) {
+  .title--heart-icon--background {
+    font-size: 30px;
+    top: -75px;
+  }
+}
+.title--heart-icon--background .fa-regular.fa-heart {
+  font-weight: bold;
+  background-image: linear-gradient(purple, pink);
+  -webkit-background-clip: text;
+  color: transparent;
+  transform-origin: center;
+  transform: scale(0);
+}
+.title--heart-icon--background:active .fa-regular.fa-heart {
+  animation: filling-heart 500ms ease-in-out forwards;
 }
 
 @media (min-width: 768px) {
@@ -262,7 +289,7 @@ footer .ustensils-icon {
 
 .frame {
   background-color: white;
-  padding: 1rem;
+  padding: 0.75rem;
   display: flex;
   border-radius: 0.75rem;
   margin: 1rem 0;

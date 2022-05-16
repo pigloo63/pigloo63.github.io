@@ -32,3 +32,13 @@
         top: -75px;
     }
 }
+
+@mixin heart-position-menu {
+    position: absolute;
+    top: 0px;
+    font-size: 25px;
+    @media (min-width:768px) {
+        font-size: 30px;
+        top: -75px;
+    }
+}

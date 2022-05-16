@@ -135,14 +135,27 @@
         display: flex;
         justify-content: space-between;
     }
-    &--heart-icon-menu{
+    &--heart-icon{
+        position: relative;
+        cursor: pointer;
+        &--main{
         font-size: 25px;
-        padding-right: 20px;
+        }
+        &--background{
+            @include heart-position-menu;
+        & .fa-regular.fa-heart{
+            font-weight: bold;
+            background-image: linear-gradient(purple,pink);
+            -webkit-background-clip: text;
+            color: transparent;
+            transform-origin: center;
+            transform: scale(0);
+            }
+        &:active .fa-regular.fa-heart{
+            animation: filling-heart 500ms ease-in-out forwards;
+        }
+        }
     }
-}
-
-@media (min-width:768px) {
-
 }
 
 @media (min-width:768px) {
