@@ -83,6 +83,13 @@
             & p{
                 font-size: 20px;
             }
+            &--heart-icon{
+                &--background{
+                &:hover .fa-regular.fa-heart{
+                    animation: filling-heart 500ms ease-in-out forwards;
+                }
+                }
+            }
         }
     }
 }
