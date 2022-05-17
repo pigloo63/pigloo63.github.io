@@ -1,7 +1,7 @@
 .container-page{
     padding-left: 15px;
     padding-right: 15px;
-    background-color: #E1E1E1;
+    background-color: #f6f6f6;
     overflow: hidden;
     position: relative;
     top: -80px;
@@ -12,7 +12,16 @@
 
 .order{
     &--button{
-    @include border (pink)
+    @include border (0,pink)
     }
+}
+
+@media (min-width:992px) {
+    .container-page{
+        max-width: 70%;
+        margin: auto;
+        margin-bottom: -80px;
+    }
+    
 }
 

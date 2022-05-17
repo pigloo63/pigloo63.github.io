@@ -35,9 +35,21 @@ header .icon-arrow {
   color: black;
 }
 
+@media (min-width: 768px) {
+  header .icon-arrow {
+    font-size: 30px;
+    top: 35px;
+    left: 50px;
+  }
+}
 @media (min-width: 992px) {
   header img {
-    width: 35%;
+    width: 25%;
+  }
+  header .icon-arrow {
+    font-size: 35px;
+    left: 80px;
+    top: 20px;
   }
 }
 .location {
@@ -78,14 +90,18 @@ header .icon-arrow {
 }
 .location--explorer--bouton {
   cursor: pointer;
-  border: 1px solid pink;
   color: white;
   font-size: 18px;
   border-radius: 25px;
-  background: rgb(2, 0, 36);
-  background: linear-gradient(353deg, rgb(2, 0, 36) 0%, rgb(232, 110, 193) 66%, rgb(222, 105, 186) 87%, rgb(255, 121, 208) 100%, rgb(0, 212, 255) 100%);
+  background-image: linear-gradient(0deg, rgba(147, 86, 220, 0.9), rgba(255, 121, 218, 0.9));
+  background-color: #686868;
   margin: 15px;
   padding: 15px;
+  transition-duration: 0.2s;
+}
+.location--explorer--bouton:hover {
+  background-color: white;
+  box-shadow: 0.25rem 0.25rem 10px rgba(0, 0, 0, 0.5);
 }
 
 .howto {
@@ -162,6 +178,7 @@ header .icon-arrow {
   font-weight: bold;
   font-style: italic;
   padding-bottom: 20px;
+  font-family: "Shrikhand", cursive;
 }
 .title--second {
   font-size: 15px;
@@ -189,8 +206,8 @@ header .icon-arrow {
 }
 @media (min-width: 768px) {
   .title--heart-icon--background {
-    font-size: 30px;
-    top: -75px;
+    font-size: 25px;
+    top: 0px;
   }
 }
 .title--heart-icon--background .fa-regular.fa-heart {
@@ -214,7 +231,7 @@ header .icon-arrow {
   }
   .howto ol .menu {
     white-space: nowrap;
-    left: 13 px;
+    left: 13px;
   }
   .howto .icon-menu {
     padding-right: 10px;
@@ -266,11 +283,15 @@ footer .ustensils-icon {
   font-size: 18px;
   padding-right: 15px;
 }
+footer a {
+  text-decoration: none;
+  color: white;
+}
 
 .container-page {
   padding-left: 15px;
   padding-right: 15px;
-  background-color: #E1E1E1;
+  background-color: #f6f6f6;
   overflow: hidden;
   position: relative;
   top: -80px;
@@ -280,9 +301,16 @@ footer .ustensils-icon {
 }
 
 .order--button {
-  border: 1px solid pink;
+  border: pink solid 0;
 }
 
+@media (min-width: 992px) {
+  .container-page {
+    max-width: 70%;
+    margin: auto;
+    margin-bottom: -80px;
+  }
+}
 .hide {
   display: none;
 }
@@ -512,7 +540,6 @@ article p {
 }
 .order--button {
   cursor: pointer;
-  border: 1px solid pink;
   padding: 15px;
   border-radius: 30px;
   padding-left: 50px;
@@ -520,8 +547,14 @@ article p {
   color: white;
   margin: 30px;
   font-size: 15px;
-  background: linear-gradient(353deg, rgb(2, 0, 36) 0%, rgb(232, 110, 193) 66%, rgb(222, 105, 186) 87%, rgb(255, 121, 208) 100%, rgb(0, 212, 255) 100%);
+  background-image: linear-gradient(0deg, rgba(147, 86, 220, 0.9), rgba(255, 121, 218, 0.9));
+  background-color: #686868;
   font-weight: bold;
+  transition-duration: 0.2s;
+}
+.order--button:hover {
+  background-color: white;
+  box-shadow: 0.25rem 0.25rem 10px rgba(0, 0, 0, 0.5);
 }
 
 main .img-menu {

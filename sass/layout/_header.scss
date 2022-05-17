@@ -13,10 +13,25 @@ header{
     }
 }
 
+
+@media (min-width:768px){
+    header{
+        & .icon-arrow{
+            font-size: 30px;
+            top: 35px;
+            left: 50px;
+        }
+    }
+}
 @media (min-width:992px) {
     header{
         & img{
-            width: 35%;
+            width: 25%;
+        }
+        & .icon-arrow{
+            font-size: 35px;
+            left: 80px;
+            top: 20px;
         }
     }
 }
